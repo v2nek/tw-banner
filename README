@@ -1,10 +1,12 @@
 # Auto banner for lots of TIME_WAIT requests.
 # requires ipset module installed.
+# to install ipset in Debian-based use:
+#  $ m-a a-i ipset
 # to work correct need to initialize ipset with:
 #  $ ipset -N dropips iphash
 # And add iptables rule:
 #  $ iptables -A INPUT -m set --set dropips src -j DROP
-# after it add execution of script into crontab
+# after it add execution of script into crontab from root
 
 # Author Borovkov Ivan.
 # email: v2nek.sev@gmail.com
