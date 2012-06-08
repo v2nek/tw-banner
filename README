@@ -1,0 +1,11 @@
+# Auto banner for lots of TIME_WAIT requests.
+# requires ipset module installed.
+# to work correct need to initialize ipset with:
+#  $ ipset -N dropips iphash
+# And add iptables rule:
+#  $ iptables -A INPUT -m set --set dropips src -j DROP
+# after it add execution of script into crontab
+
+# Author Borovkov Ivan.
+# email: v2nek.sev@gmail.com
+# main script body was written 06/06/2012
