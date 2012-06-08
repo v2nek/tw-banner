@@ -11,7 +11,7 @@ import time
 import datetime
 import pickle
 
-whitelist = ["127.0.0.1", "0.0.0.0", "78.47.190.166","95.132.82.81"]
+whitelist = ["127.0.0.1", "0.0.0.0"]
 banlogs = "/tmp/logban"
 banhist = "/root/banhistory"
 
